@@ -1,8 +1,19 @@
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Home {
     public static void main(String[] args) {
-       calc();
+       /* Задано уравнение вида q + w = e, q, w, e >= 0.
+       Некоторые цифры могут быть заменены знаком вопроса,
+       например 2? + ?5 = 69.
+       Требуется восстановить выражение до верного равенства.
+       Предложить хотя бы одно решение или сообщить, что его нет.*/
+
+
+        String str = "2? + ?5 = 69";
+        char[] arr = str.toCharArray();
+        System.out.println(Arrays.toString(arr));
+
     }
 
     static void sumnum() {
@@ -33,7 +44,8 @@ public class Home {
         System.out.println(x);
     }
 
-    static void primeNum() {
+    static void primeNum()
+    {
         /* Вывести все простые числа от 1 до 1000
         (простые числа - это числа которые делятся только на себя и на единицу
         без остатка. Чтобы найти остаток от деления используйте оператор % ,
@@ -78,4 +90,6 @@ public class Home {
             System.out.println("Результат: " + (a * b));
         }
     }
+
+
 }
